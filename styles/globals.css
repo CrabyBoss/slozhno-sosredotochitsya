@@ -12,6 +12,11 @@ body {
   margin: 0 auto;
 }
 
+img {
+  display: block;
+  inline-size: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -20,6 +25,13 @@ h5,
 h6,
 p {
   margin: 0;
+
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  font-style: normal;
+  color: var(--text-color);
 }
 
 ul {
