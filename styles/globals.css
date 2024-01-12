@@ -10,6 +10,14 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+
+  font-family: var(--text-main-font), sans-serif;
+  font-size: var(--main-font-size);
+  font-weight: 400;
+  line-height: 130%;
+  font-style: normal;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 img {
@@ -25,13 +33,6 @@ h5,
 h6,
 p {
   margin: 0;
-
-  font-family: 'IBM Plex Mono';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 130%;
-  font-style: normal;
-  color: var(--text-color);
 }
 
 ul {

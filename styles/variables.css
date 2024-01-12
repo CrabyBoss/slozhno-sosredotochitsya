@@ -3,6 +3,9 @@
   и их переопределение под различные устройства
 */
 :root {
+  --text-main-font: 'IBM Plex mono';
+  --main-font-size: 18px;
+
   --bg-color: #000028;
   --section-title-color: #FF0070;
   --paragraph-title-color: #000028;

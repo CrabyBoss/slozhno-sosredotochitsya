@@ -3,7 +3,6 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--page-background-image);
-  background-color: var(--bg-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +29,7 @@
 }
 
 .header {
-  block-size: 100lvh;
+  block-size: max(100lvh, clamp(668px, 20.5191rem + 90.5852vw, 1024px));
   position: relative;
   display: grid;
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
@@ -70,6 +69,7 @@
 
 .REC-word {
   color: var(--REC-color);
+  text-transform: uppercase;
 }
 
 .REC-word::after {
@@ -99,13 +99,14 @@
 }
 
 .header__theme-menu-button {
-  font-family: 'IBM Plex Mono';
+  font-family: var(--text-main-font), sans-serif;
   font-size: 18px;
   line-height: 128%;
   background-color: transparent;
   border: none;
   text-transform: lowercase;
   padding: 1.5px 13px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -135,6 +136,7 @@
 .heading__paragraph {
   justify-self: end;
   font-weight: 700;
+  margin-block-start: auto;
   margin-block-end: clamp(56px, -2.8812rem + 27.2265vw, 163px);
   inline-size: clamp(355px, 21.6508rem + 2.2901vw, 364px);
   min-block-size: 117px;
@@ -157,6 +159,7 @@
 }
 
 .section__heading {
+  font-size: var(--main-font-size);
   color: var(--section-title-color);
   font-weight: 700;
   max-inline-size: clamp(236px, 29.2844rem + -30.2799vw, 355px);
@@ -170,6 +173,10 @@
 .content__section-list-item {
   display: grid;
   gap: 10px;
+}
+
+.section__paragraph-title {
+  font-size: var(--main-font-size);
 }
 
 .content__section-list:has( .additional__section-paragraph) h3 {
@@ -222,6 +229,10 @@
 }
 
 @media (width >= 768px) {
+  .header {
+    block-size: max(100lvh, clamp(768px, 112rem + -100vw, 1024px));
+  }
+
   .heading {
     margin-inline-start: -20px;
     font-size: clamp(120px, 0.5625rem + 14.4531vw, 157px);
