@@ -59,7 +59,7 @@
   inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
-.REC__conteiner {
+.rec__conteiner {
   position: absolute;
   inline-size: calc(33px + 28px);
   line-height: 25px;
@@ -67,12 +67,12 @@
   inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
-.REC-word {
+.rec-word {
   color: var(--REC-color);
   text-transform: uppercase;
 }
 
-.REC-word::after {
+.rec-word::after {
   content: "";
   position: absolute;
   inline-size: 9px;
@@ -99,7 +99,7 @@
 }
 
 .header__theme-menu-button {
-  font-family: var(--text-main-font), sans-serif;
+  font-family: var(--text-main-font), monospace;
   font-size: 18px;
   line-height: 128%;
   background-color: transparent;
